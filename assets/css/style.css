@@ -1,0 +1,448 @@
+@font-face {
+    font-family: iransans;
+    src: url('../fonts/iransans/IRANSansWeb.eot');
+    src: url('../fonts/iransans/IRANSansWeb.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/iransans/IRANSansWeb.woff2') format('woff2'),
+        url('../fonts/iransans/IRANSansWeb.woff') format('woff'),
+        url('../fonts/iransans/IRANSansWeb.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+/* Remove default padding */
+ul,
+ol {
+    padding: 0;
+}
+
+/* Remove default margin */
+body,
+h1,
+h2,
+h3,
+h4,
+p,
+ul,
+ol,
+li,
+figure,
+figcaption,
+blockquote,
+dl,
+dd {
+    margin: 0;
+}
+
+/* Set core body defaults */
+body {
+    font-family: iransans;
+    scroll-behavior: smooth;
+    text-rendering: optimizeSpeed;
+    line-height: 1.5;
+    direction: rtl;
+}
+
+/* Remove list styles on ul, ol elements with a class attribute */
+ul[class],
+ol[class] {
+    list-style: none;
+}
+
+/* A elements that don't have a class get default styles */
+a:not([class]) {
+    text-decoration-skip-ink: auto;
+}
+
+/* Make images easier to work with */
+img {
+    max-width: 100%;
+    display: block;
+}
+
+a,
+a:hover {
+    text-decoration: none;
+}
+
+/* Natural flow and rhythm in articles by default */
+article>*+* {
+    margin-top: 1em;
+}
+
+/* Inherit fonts for inputs and buttons */
+input,
+button,
+textarea,
+select {
+    font: inherit;
+}
+
+h1,
+.h1 {
+    font-size: 2.2rem;
+}
+
+h2,
+.h2 {
+    font-size: 2rem;
+}
+
+h3,
+.h3 {
+    font-size: 1.8rem;
+}
+
+h4,
+.h4 {
+    font-size: 1.6rem;
+}
+
+h5,
+.h5 {
+    font-size: 1.4rem;
+}
+
+h6,
+.h6 {
+    font-size: 1.2rem;
+}
+
+/* Remove all animations and transitions for people that prefer not to see them */
+@media (prefers-reduced-motion: reduce) {
+    * {
+        animation-duration: 0.01ms !important;
+        animation-iteration-count: 1 !important;
+        transition-duration: 0.01ms !important;
+        scroll-behavior: auto !important;
+    }
+}
+
+header {
+    width: 100%;
+    height: 100%;
+    position: relative;
+
+    background: rgb(49, 51, 213);
+    background-image: url(../image/bg-header.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    overflow: hidden;
+    padding-bottom: 3em;
+}
+
+header .container {
+    z-index: 1;
+}
+
+.svg-bg-header {
+    background-image: url(../image/svg-header.svg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    position: absolute;
+    top: -20px;
+    right: 0;
+    width: 100%;
+    height: 100%;
+    transform: scale(1.75);
+    z-index: 0;
+}
+
+.navbar-toggler-btn {
+    background: transparent;
+    border: 1px solid #fff;
+    display: none;
+}
+
+.header-content {
+    width: 100%;
+    padding-top: 6em;
+}
+
+/********* nav main menu style  *********/
+.content-nav-menu {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+#main-nav-bar-id.scroll {
+    background: #7336f3;
+    -webkit-box-shadow: 0px 3px 5px 0px rgba(0, 0, 0, 0.49);
+    -moz-box-shadow: 0px 3px 5px 0px rgba(0, 0, 0, 0.49);
+    box-shadow: 0px 3px 5px 0px rgba(0, 0, 0, 0.49);
+}
+#main-nav-bar-id.hide {
+    transform: translateY(-100%);
+}
+.main-menu-navbar {
+    width: 100%;
+    position: fixed;
+    top: 0;
+    right: 0;
+    z-index: 5;
+    transition:all .5s;
+}
+
+.main-menu-itme {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.navbar-brand {
+    max-width: 100px;
+    transition: all .4;
+}
+
+.main-menu-itme li .link-main-menu {
+    font-size: .9rem;
+    color: #fff;
+    padding: 10px 15px;
+}
+
+.col-app-header-content {
+    display: flex;
+    align-items: center;
+}
+
+.app-header-title {
+    font-size: 1.8rem;
+    color: #fff;
+    margin-bottom: .6em;
+}
+
+.app-header-text {
+    font-size: .9rem;
+    color: #e3e2ed;
+    text-align: justify;
+    margin-bottom: .8em;
+}
+
+.app-header-image {
+    width: 350px;
+}
+
+.header-app-btn {
+    display: flex;
+    justify-content: flex-end;
+}
+
+.svg-header-end {
+    width: 100%;
+    position: relative;
+    overflow: hidden;
+    margin-top: -2px;
+}
+
+.header-svg-itme-one {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 10px;
+    right: 10px;
+    opacity: .5;
+    transform: rotate(-2deg);
+}
+
+/***** cusotm btn style *******/
+.btn-custom {
+    display: inline-block;
+    font-weight: 400;
+    color: #212529;
+    text-align: center;
+    vertical-align: middle;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    background-color: transparent;
+    border: 1px solid transparent;
+    background-repeat: no-repeat;
+    padding: 6px 30px;
+    font-size: 1rem;
+    line-height: 1.5;
+    border-radius: 30px;
+    cursor: pointer;
+    transition: color .15s ease-in-out, background-color .15s ease-in-out, border-color .15s ease-in-out, box-shadow .15s ease-in-out;
+}
+
+.btn-gradient {
+    background: rgb(49, 51, 213);
+    background: linear-gradient(90deg, rgba(49, 51, 213, 1) 31%, rgba(111, 66, 246, 1) 65%);
+    background-repeat: no-repeat;
+    border-color: rgb(57, 55, 222);
+    color: #fff;
+    -webkit-box-shadow: -4px 7px 19px 0px rgba(0, 0, 0, 0.29);
+    -moz-box-shadow: -4px 7px 19px 0px rgba(0, 0, 0, 0.29);
+    box-shadow: -4px 7px 19px 0px rgba(0, 0, 0, 0.29);
+    transition: all .4;
+}
+
+.btn-gradient:hover {
+    box-shadow: none;
+}
+
+.btn-white {
+    border-color: #fff;
+    color: #fff;
+    transition: all .4;
+}
+
+.btn-white:hover {
+    -webkit-box-shadow: -4px 7px 19px 0px rgba(0, 0, 0, 0.29);
+    -moz-box-shadow: -4px 7px 19px 0px rgba(0, 0, 0, 0.29);
+    box-shadow: -4px 7px 19px 0px rgba(0, 0, 0, 0.29);
+}
+
+/******* count up section style ********/
+.box-count-up {
+    position: relative;
+}
+
+.box-count-up-border::before,
+.box-count-up-border::after {
+    content: "";
+    position: absolute;
+    bottom: 20%;
+    width: 2px;
+    height: 50%;
+    background-color: #c5c5c5;
+}
+
+.box-count-up-border::before {
+    left: 0;
+}
+
+.box-count-up-border::after {
+    right: 0;
+}
+
+.number-box-count {
+    font-size: 2rem;
+    text-align: center;
+    color: #7336f3;
+    font-weight: 700;
+}
+
+.title-box-count {
+    font-size: .9rem;
+    text-align: center;
+    color: #000;
+}
+
+/****** section app service  *****/
+.box-app-heading-title {
+    font-size: 1.5rem;
+    color: #000;
+    font-weight: 600;
+    text-align: center;
+    padding-bottom: 1em;
+}
+
+.box-app-heading-title span {
+    color: #7336f3;
+}
+
+.box-app-heading-description {
+    font-size: .9rem;
+    text-align: center;
+}
+
+.box-app-service-icon {
+    width: 80px;
+    margin: 0 auto;
+    margin-bottom: 1em;
+    transition: all 1s;
+}
+
+.box-app-service-title {
+    font-size: 1.2rem;
+    font-weight: 600;
+    text-align: center;
+    margin-bottom: 1em;
+    transition: all .4s;
+}
+
+.box-app-service-text {
+    font-size: .9rem;
+    text-align: center;
+}
+
+.box-app-service {
+    width: 90%;
+    margin: 0 auto;
+    padding: 20px 25px;
+    margin-bottom: 1em;
+    border-radius: 6px;
+    transition: all .5s;
+    cursor: default;
+}
+
+.box-app-service:hover {
+    -webkit-box-shadow: 0px 0px 11px -2px rgba(112, 112, 112, 0.61);
+    -moz-box-shadow: 0px 0px 11px -2px rgba(112, 112, 112, 0.61);
+    box-shadow: 0px 0px 11px -2px rgba(112, 112, 112, 0.61);
+}
+.box-app-service:hover .box-app-service-icon{
+    transform: scale(1.1);
+}
+.box-app-service:hover .box-app-service-title{
+    color: #7336f1;
+}
+.app-service-mockup-img {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    top: -50px;
+    left: 0;
+    right: 0;
+}
+
+/* around-app-section style  */
+.around-app-section{
+    width: 100%;
+    background-color: #f4efff;
+    position: relative;
+    padding-bottom:2em;
+    height: 500px;
+}
+@media screen and (max-width:768px) {
+    .svg-bg-header {
+        background-position: top;
+        transform: scale(1);
+    }
+    .app-header-title{
+        text-align: center;
+    }
+    .navbar-toggler-btn {
+        display: block;
+    }
+
+    .main-menu-itme {
+        display: none;
+    }
+
+    .app-header-image {
+        width: 100%;
+    }
+
+    .main-menu-navbar {
+        height: 60px;
+    }
+
+    .navbar-brand {
+        max-width: 65px;
+    }
+
+    .header-svg-itme-one {
+        top: 5px;
+        right: 0px;
+        transform: rotate(1deg);
+    }
+}
