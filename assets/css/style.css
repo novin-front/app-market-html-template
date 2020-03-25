@@ -280,11 +280,12 @@ header .container {
     -webkit-box-shadow: -4px 7px 19px 0px rgba(0, 0, 0, 0.29);
     -moz-box-shadow: -4px 7px 19px 0px rgba(0, 0, 0, 0.29);
     box-shadow: -4px 7px 19px 0px rgba(0, 0, 0, 0.29);
-    transition: all .4;
+    transition: all .8;
 }
 
 .btn-gradient:hover {
     box-shadow: none;
+    color: #fff;
 }
 
 .btn-white {
@@ -409,17 +410,79 @@ header .container {
     width: 100%;
     background-color: #f4efff;
     position: relative;
-    padding-bottom:2em;
-    height: 500px;
 }
+.content-around-app{
+    width: 100%;
+    position: relative;
+    padding-top: 10em;
+    overflow: hidden;
+    padding-bottom: 3em;
+}
+.around-app-shape {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+.sh-img-mobile {
+    position: absolute;
+    max-width: 350px;
+    bottom: 10%;
+}
+.sub-title-around-app {
+    font-size: 1.2rem;
+    padding: 1em 0;
+}
+
+.box-title-around-app {
+    font-size: 1.4rem;
+    color: #7336f1;
+    font-weight: 600;
+    padding-bottom: .7em;
+}
+
+.box-around-content {
+    font-size: .9rem;
+    padding-bottom: 1.6em;
+}
+.shape-box-img {
+    position: absolute;
+    max-width: 350px;
+    opacity: .2;
+}
+.around-tow{
+    bottom: 0;
+    left: 0;
+}
+.around-tow img{
+    transform: rotate(25deg);
+}
+.around-one {
+    top: 0;
+    right: -12%;
+}
+
+.around-one img {
+    transform: rotate(180deg);
+}
+
+@media screen and (max-width:520px) {
+    .sh-img-mobile {
+        max-width: 220px;
+    }
+}
+
+/* mobile and tablet */
 @media screen and (max-width:768px) {
     .svg-bg-header {
         background-position: top;
         transform: scale(1);
     }
-    .app-header-title{
+
+    .app-header-title {
         text-align: center;
     }
+
     .navbar-toggler-btn {
         display: block;
     }
@@ -445,4 +508,27 @@ header .container {
         right: 0px;
         transform: rotate(1deg);
     }
+
+    .sh-img-mobile {
+        max-width: 300px;
+    }
 }
+/* Large devices (tablet, 769px and up) */
+@media only screen and (min-width: 769px) {
+    .sh-img-mobile {
+        max-width: 250px;
+    }
+}
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 992px) {}
+
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+@media only screen and (min-width: 1200px) {
+    .sh-img-mobile {
+        max-width: 350px;
+    }
+    .content-around-app{
+        padding-top: 18em;
+    }
+}
+
