@@ -298,6 +298,7 @@ header .container {
     -webkit-box-shadow: -4px 7px 19px 0px rgba(0, 0, 0, 0.29);
     -moz-box-shadow: -4px 7px 19px 0px rgba(0, 0, 0, 0.29);
     box-shadow: -4px 7px 19px 0px rgba(0, 0, 0, 0.29);
+    color: #fff;
 }
 
 /******* count up section style ********/
@@ -403,6 +404,7 @@ header .container {
     top: -50px;
     left: 0;
     right: 0;
+    z-index: 1;
 }
 
 /* around-app-section style  */
@@ -414,7 +416,7 @@ header .container {
 .content-around-app{
     width: 100%;
     position: relative;
-    padding-top: 10em;
+    padding-top: 18em;
     overflow: hidden;
     padding-bottom: 3em;
 }
@@ -465,10 +467,116 @@ header .container {
 .around-one img {
     transform: rotate(180deg);
 }
+/***** section how to work app  *******/
+.how-work-app-section {
+    width: 100%;
+    position: relative;
+    padding: 2em 0;
+}
+.how-work-app-box{
+    cursor: default;
+}
+.how-work-app-box-image {
+    max-width: 100px;
+    transition: all .5s;
+}
+.how-work-app-box.text-right {
+    display: flex;
+    flex-flow: column;
+    align-items: flex-end;
+}
+.how-work-app-box-title {
+    font-size: 1.2rem;
+    font-weight: 600;
+    padding: 1.1em 0;
+    transition: all .4s;
+}
+
+.how-work-app-box-text {
+    font-size: .9rem;
+    padding-bottom: 0.6em;
+}
+.how-work-app-box:hover .how-work-app-box-image {
+    transform: translateY(-5px);
+}
+.how-work-app-box:hover .how-work-app-box-title {
+    color: #7336f1;
+}
+/****** section download app  ****/
+.download-app-section {
+    width: 100%;
+    padding-top: 2em;
+    position: relative;
+    overflow: hidden;
+    background: rgb(53, 55, 193);
+    background: linear-gradient(90deg, rgba(53, 55, 193, 1) 31%, rgba(109, 69, 223, 1) 65%);
+    margin-bottom: 10em;
+}
+.download-app-image {
+    max-width: 400px;
+    margin: 0 auto;
+    transform: translateY(85px);
+}
+.download-app-sub-title {
+    font-size: 1.3rem;
+    color: #fff;
+    padding-bottom: .6em;
+}
+
+.download-app-title {
+    font-size: 1.5rem;
+    font-weight: 700;
+    color: #fff;
+    padding-bottom: .9em;
+}
+
+.download-app-text {
+    color: #fff;
+    font-size: .9rem;
+}
+.download-app-btn {
+    display: flex;
+    flex-flow: wrap;
+    justify-content: center;
+    align-items: center;
+}
+
+.download-app-btn i {
+    font-size: 2rem;
+    padding-left: 10px;
+}
+.download-app-btn-wrapper {
+    margin-top: 2em;
+    text-align: center;
+}
+.download-app-btn-text {
+    display: flex;
+    flex-flow: column;
+    justify-content: center;
+    align-items: center;
+    padding-right: .5em;
+    padding-left: 2em;
+}
+
+.download-app-btn-text__sub-title {
+    font-size: .7rem;
+    display: block;
+}
+
+.download-app-btn-text__title {
+    font-size: 1.1rem;
+    display: block;
+}
+
+
 
 @media screen and (max-width:520px) {
     .sh-img-mobile {
         max-width: 220px;
+    }
+    .around-one {
+        top: 5%;
+        right: -20%;
     }
 }
 
@@ -512,12 +620,29 @@ header .container {
     .sh-img-mobile {
         max-width: 300px;
     }
+    .shape-box-img {
+        max-width: 150px;
+        z-index: 0;
+    }
+    .how-work-app-box{
+        text-align: center;
+    }
+    .how-work-app-box {
+        display: flex;
+        flex-flow: column;
+        align-items: center;
+    }
 }
 /* Large devices (tablet, 769px and up) */
 @media only screen and (min-width: 769px) {
     .sh-img-mobile {
         max-width: 250px;
     }
+     .how-work-app-box.text-md-right {
+         display: flex;
+         flex-flow: column;
+         align-items: flex-end;
+     }
 }
 /* Large devices (laptops/desktops, 992px and up) */
 @media only screen and (min-width: 992px) {}
@@ -530,5 +655,6 @@ header .container {
     .content-around-app{
         padding-top: 18em;
     }
+   
 }
 
