@@ -1,4 +1,5 @@
  $(document).ready(function(){
+     let countfalse = true;
      $("#navbar-toggler-btn").click(function(){
          $(".mobile-nav-wrapper").toggleClass("show")
      })
@@ -52,8 +53,12 @@
             let windowScroll = $(window).scrollTop()
             let counterUp = $(".app-counter-up-section").offset().top
             if (windowScroll >= counterUp && windowScroll < 1350) {
-               cuonUpFunction();
+               if (countfalse){
+                    cuonUpFunction();
+               }
+                countfalse = false;
             }
+           
         })
        function cuonUpFunction (){
            $('.counter').each(function () {
