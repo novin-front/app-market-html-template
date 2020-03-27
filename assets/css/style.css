@@ -152,19 +152,111 @@ header .container {
     height: 100%;
     transform: scale(1.75);
     z-index: 0;
+    
 }
 
-.navbar-toggler-btn {
+#navbar-toggler-btn {
     background: transparent;
     border: 1px solid #fff;
     display: none;
+    font-size: 1.4rem;
+    padding-bottom: 0;
+    padding: 5px 10px;
+    color: #fff;
+    line-height: 15px;
 }
-
 .header-content {
     width: 100%;
     padding-top: 6em;
 }
+.mobile-nav-wrapper {
+    display: none;
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    z-index: 9;
+    right: 0;
+    left: 0;
+    visibility: visible;
+    background-color: rgba(0, 0, 0,.5);
+    overflow: hidden;
+    transform: translateX(100%);
+    transition: all .5s;
+}
+.mobile-nav-wrapper.show{
+    transform: translateX(0);
+}
+.mobile-nav-bg{
+    position: relative;
+    overflow: hidden;
+    width: 75%;
+    height: 100vh;
+    background: rgb(113, 66, 247);
+    background: linear-gradient(167deg, rgba(113, 66, 247, 1) 31%, rgba(47, 50, 212, 1) 65%);
+}
+.mbile-menu-heding {
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    padding: .7em 0;
+    margin-bottom: .6em;
+    -webkit-box-shadow: 0px 2px 5px 0px rgba(0, 0, 0, 0.48);
+    -moz-box-shadow: 0px 2px 5px 0px rgba(0, 0, 0, 0.48);
+    box-shadow: 0px 2px 5px 0px rgba(0, 0, 0, 0.48);
+}
 
+.title-m-h {
+    font-size: 1.3em;
+    color: #fff;
+}
+
+#mobile-menu-close {
+    font-size: 1em;
+    color: #fff;
+    background: transparent;
+    border: 0;
+}
+ul.main-menu-mobile {
+    width: 100%;
+}
+
+.main-menu-mobile .link-main-menu {
+    padding: .3em 1em;
+    display: block;
+    color: #fff;
+}
+.social-network-nav {
+    width: 100%;
+    display: flex;
+    flex-flow: wrap;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    padding: .4em 0;
+}
+.link-social-nav-m {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 35px;
+    height: 35px;
+    background-color: transparent;
+    border: .1rem solid #fff;
+    border-radius: 50%;
+    margin: 6px;
+    color: #fff;
+    font-size: 1rem;
+    transition: all .5s;
+}
+
+.link-social-nav-m:hover {
+    background-color: #fff;
+    color: #7336f1;
+
+}
 /********* nav main menu style  *********/
 .content-nav-menu {
     display: flex;
@@ -980,7 +1072,7 @@ a.copy-right-link {
         text-align: center;
     }
 
-    .navbar-toggler-btn {
+    #navbar-toggler-btn {
         display: block;
     }
 
@@ -1073,6 +1165,9 @@ a.copy-right-link {
 
     .box-count-up-border::after {
         bottom: -15px;
+    }
+    .mobile-nav-wrapper{
+        display: block;
     }
 }
 /* Large devices (tablet, 769px and up) */

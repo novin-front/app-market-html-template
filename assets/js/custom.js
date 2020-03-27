@@ -1,4 +1,10 @@
  $(document).ready(function(){
+     $("#navbar-toggler-btn").click(function(){
+         $(".mobile-nav-wrapper").toggleClass("show")
+     })
+     $("#mobile-menu-close").click(function(){
+         $(".mobile-nav-wrapper").removeClass("show")
+     })
         if($(window).scrollTop() >= 80) {
             $("#main-nav-bar-id").addClass("scroll");
             $(".navbar-brand").css({
