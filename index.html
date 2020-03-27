@@ -7,7 +7,8 @@
     <title>app market html template</title>
     <!-- fontawesome icon link  -->
     <link rel="stylesheet" href="assets/fonts/fontawesome-5.12.1/css/all.css">
-
+    <link rel="stylesheet" type="text/css" href="assets/plugin/slick-slider/slick.css">
+    <link rel="stylesheet" type="text/css" href="assets/plugin/slick-slider/slick-theme.css">
 
     <link rel="stylesheet" href="assets/css/bootstrap.min.css">
     <link rel="stylesheet" href="assets/css/style.css">
@@ -98,19 +99,19 @@
             <div class="row d-flex justify-content-center py-5">
                 <div class="col-12 col-md-3">
                     <div class="box-count-up">
-                        <div class="number-box-count">9631 +</div>
+                        <div class="number-box-count counter" data-count="9631">0</div>
                         <div class="title-box-count">تعداد دانلود</div>
                     </div>
                 </div>
                 <div class="col-12 col-md-3">
                     <div class="box-count-up">
-                        <div class="number-box-count box-count-up-border">9601 +</div>
+                        <div class="number-box-count box-count-up-border counter" data-count="9601">0</div>
                         <div class="title-box-count">تعداد کاربران فعال</div>
                     </div>
                 </div>
                 <div class="col-12 col-md-3">
                     <div class="box-count-up">
-                        <div class="number-box-count">1260 +</div>
+                        <div class="number-box-count counter" data-count="1260">0</div>
                         <div class="title-box-count">تعداد اشتراک در شبکه های اجتماعی</div>
                     </div>
                 </div>
@@ -375,43 +376,46 @@
                 </div>
             </div>
             <div class="row d-flex justify-content-center">
-                <div class="col-12 col-md-8">
-                    <div id="carouselExampleControls" class="carousel slide" data-ride="carousel">
-                        <div class="carousel-inner">
-                            <div class="carousel-item active">
-                                <img src="assets/image/post-1.jpg" class="d-block w-100" alt="app screen shot">
-                            </div>
-                            <div class="carousel-item">
-                                <img src="assets/image/post-2.jpg" class="d-block w-100" alt="app screen shot">
-                            </div>
-                            <div class="carousel-item">
-                                <img src="assets/image/post-3.jpg" class="d-block w-100" alt="app screen shot">
+                <div class="col-12 col-md-4">
+                    
+
+                        <div class="slider-wrapper">
+                            <div class="iphone-image">
+                                <div class="screen">
+                                    <div class="slider">
+                                        <div>
+                                            <img class="img-fluid img-h-100" src="assets/image/itme-1.png" alt="">
+                                        </div>
+                                        <div>
+                                            <img class="img-fluid img-h-100" src="assets/image/itme-2.png" alt="">
+                                        </div>
+                                        <div>
+                                            <img class="img-fluid img-h-100" src="assets/image/itme-3.png" alt="">
+                                        </div>
+                                    </div>
+                                </div>
                             </div>
                         </div>
-                        <a class="carousel-control-prev app-screen btn-prev-s" href="#carouselExampleControls" role="button"
-                            data-slide="prev">
-                            <i class="fas fa-arrow-right"></i>
-                            <span class="sr-only">Previous</span>
-                        </a>
-                        <a class="carousel-control-next app-screen btn-next-s" href="#carouselExampleControls" role="button"
-                            data-slide="next">
-                            
-                            <i class="fas fa-arrow-left"></i>
-                            <span class="sr-only">Next</span>
-                        </a>
-                    </div>
+
+
+
+
+
                 </div>
             </div>
         </div>
     </section>
-    <section class="monitor-test-section">
+    <section class="testimonial-section">
+        <div class="shape-box-img testimonial-one">
+            <img src="assets/image/svg-shape.svg" class="img-fluid" alt="">
+        </div>
         <div class="container">
             <div class="row d-flex justify-content-center py-5">
                 <div class="col-12 col-md-8">
                     <div class="box-app-heading">
                         <h3 class="box-app-heading-title">
-                            لیست صفحات
-                            <span>اپلیکیشن</span>
+                           بخضی از نظرات
+                            <span>کاربران</span>
                         </h3>
                         <p class="box-app-heading-description">
                             اشتن اپلیکیشن بر روی گوشی مشتری، به معنی دسترسی بیشتر و ارتباط عمیق‌تر با اوست. اگر کسب و
@@ -426,24 +430,69 @@
             </div>
             <div class="row d-flex justify-content-center">
                 <div class="col-12 col-md-8">
-                    <div id="carouselExampleControls" class="carousel slide" data-ride="carousel">
+                    <div id="carouselExampleControls2" class="carousel slide" data-ride="carousel">
                         <div class="carousel-inner">
                             <div class="carousel-item active">
-                                <img src="assets/image/post-1.jpg" class="d-block w-100" alt="app screen shot">
+                                <div class="box-testimonial">
+                                    <div class="box-test-user-image">
+                                        <img src="assets/image/personal-img-1.jpg" class="img-fluid" alt="">
+                                    </div>
+                                    <div class="test-name-user">
+                                        محمد یزدان پناه
+                                    </div>
+                                    <div class="test-job-title">
+                                        برنامه نویس
+                                    </div>
+                                    <p class="user-description">
+                                        شرکت نرم افزاری ویستا با ارائه مشاوره ای دلسوزانه و متعهدانه،باعث پیشرفت کسب و کار من در بستر اپلیکیشن ها شد.ممنون از
+                                        خدمات ویژه و مناسبشون.
+                                    </p>
+                                </div>
                             </div>
                             <div class="carousel-item">
-                                <img src="assets/image/post-2.jpg" class="d-block w-100" alt="app screen shot">
+                                <div class="box-testimonial">
+                                    <div class="box-test-user-image">
+                                        <img src="assets/image/personal-img-2.jpg" class="img-fluid" alt="">
+                                    </div>
+                                    <div class="test-name-user">
+                                        حسین احمدی
+                                    </div>
+                                    <div class="test-job-title">
+                                        طراح
+                                    </div>
+                                    <p class="user-description">
+                                        شرکت نرم افزاری ویستا با ارائه مشاوره ای دلسوزانه و متعهدانه،باعث پیشرفت کسب و کار من در بستر اپلیکیشن ها
+                                        شد.ممنون از
+                                        خدمات ویژه و مناسبشون.
+                                    </p>
+                                </div>
                             </div>
+
                             <div class="carousel-item">
-                                <img src="assets/image/post-3.jpg" class="d-block w-100" alt="app screen shot">
+                                <div class="box-testimonial">
+                                    <div class="box-test-user-image">
+                                        <img src="assets/image/personal-img-3.jpg" class="img-fluid" alt="">
+                                    </div>
+                                    <div class="test-name-user">
+                                        افشین زندی
+                                    </div>
+                                    <div class="test-job-title">
+                                       دیجیتال مارکتر
+                                    </div>
+                                    <p class="user-description">
+                                        شرکت نرم افزاری ویستا با ارائه مشاوره ای دلسوزانه و متعهدانه،باعث پیشرفت کسب و کار من در بستر اپلیکیشن ها
+                                        شد.ممنون از
+                                        خدمات ویژه و مناسبشون.
+                                    </p>
+                                </div>
                             </div>
                         </div>
-                        <a class="carousel-control-prev app-screen btn-prev-s" href="#carouselExampleControls" role="button"
+                        <a class="carousel-control-prev app-screen btn-prev-s" href="#carouselExampleControls2" role="button"
                             data-slide="prev">
                             <i class="fas fa-arrow-right"></i>
                             <span class="sr-only">Previous</span>
                         </a>
-                        <a class="carousel-control-next app-screen btn-next-s" href="#carouselExampleControls" role="button"
+                        <a class="carousel-control-next app-screen btn-next-s" href="#carouselExampleControls2" role="button"
                             data-slide="next">
         
                             <i class="fas fa-arrow-left"></i>
@@ -452,6 +501,9 @@
                     </div>
                 </div>
             </div>
+        </div>
+        <div class="shape-box-img testimonial-tow">
+            <img src="assets/image/svg-shape.svg" class="img-fluid" alt="">
         </div>
     </section>
     <section class="blog-post-section">
@@ -689,7 +741,8 @@
         </div>
 
     </footer>
-    <script src="assets/js/jquery-3.3.1.js"></script>
+    <script src="assets/js/jquery-3.4.1.js"></script>
+    <script type="text/javascript" src="assets/plugin/slick-slider/slick.js"></script>
     <script src="assets/js/bootstrap.min.js"></script>
     <script src="assets/js/popper.min.js"></script>
     <script src="assets/js/custom.js"></script>

@@ -46,6 +46,7 @@ body {
     text-rendering: optimizeSpeed;
     line-height: 1.5;
     direction: rtl;
+    position: relative;
 }
 
 /* Remove list styles on ul, ol elements with a class attribute */
@@ -334,8 +335,8 @@ header .container {
 /******* count up section style ********/
 .box-count-up {
     position: relative;
+    margin: 2em 0;
 }
-
 .box-count-up-border::before,
 .box-count-up-border::after {
     content: "";
@@ -366,7 +367,12 @@ header .container {
     text-align: center;
     color: #000;
 }
-
+/***** app counter up section ****/
+.app-counter-up-section {
+    position: relative;
+    width: 100%;
+    padding: 4em 0;
+}
 /****** section app service  *****/
 .box-app-heading-title {
     font-size: 1.5rem;
@@ -616,6 +622,138 @@ header .container {
 .btn-next-s {
     left: -15%;
 }
+.app-screen-shot-bg{
+    width: 100%;
+    background-image: url("../image/app-mockup-bg.png");
+    position: relative;
+    background-repeat: no-repeat;
+    background-size: cover;
+    z-index: 9999;
+
+}
+/* ************************* Slider mockup ***********************************/
+.iphone-mockup {
+    position: relative;
+    z-index: 5;
+}
+
+.slider-wrapper {
+    position: relative;
+    width: 100%;
+    padding-bottom: 203.477897%;
+    margin-bottom: 20px;
+}
+
+.iphone-image {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    width: 100%;
+    height: 100%;
+    -webkit-background-size: 100% 100%;
+    background-repeat: no-repeat;
+    background-image: url(../image/mockup.png);
+    background-size: cover;
+    background-position: center center;
+}
+
+.screen {
+    /* overflow: hidden; */
+    position: absolute;
+    top: 14%;
+    bottom: 12.6%;
+    left: 6.49%;
+    right: 6.4%;
+    background-color: #E91E63;
+}
+
+.slider {
+    height: 100%;
+}
+
+.slider div {
+    height: 100%;
+}
+.screen-shot-btn {
+    position: absolute;
+    top: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 15px;
+    font-size: 1.8rem;
+    background: transparent;
+    border: 0;
+    color: #7a7880;
+    cursor: pointer;
+    transition: all .5s;
+}
+.screen-shot-btn:hover{
+    color: #7336f1;
+}
+.screen-shot-btn:focus{
+    outline: 0;
+}
+.btn-right-aw{
+    right: -35%;
+    z-index: 3;
+}
+.btn-left-aw {
+    left: -35%;
+    z-index: 3;
+}
+/******** monitor test section *******/
+.testimonial-section {
+    width: 100%;
+    padding: 4em 0;
+    position: relative;
+    overflow: hidden;
+    background-color: #f4efff;
+}
+.box-testimonial {
+    display: flex;
+    flex-flow: column;
+    justify-content: center;
+    align-items: center;
+}
+.box-test-user-image {
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    overflow: hidden;
+    margin-bottom: 1em;
+}
+
+.test-name-user {
+    font-size: 1.5rem;
+    font-weight: 600;
+    padding: 10px;
+}
+
+.test-job-title {
+    font-size: 1.1rem;
+    padding-bottom: 1em;
+    color: #7336f3;
+    font-weight: 700;
+}
+
+.user-description {
+    text-align: center;
+    line-height: 28px;
+    padding-bottom: 1em;
+}
+.testimonial-one {
+    top: 10%;
+    right: 0;
+    transform: rotate(180deg) scale(1.5) translateX(-30%);
+}
+.testimonial-tow{
+    bottom: -5%;
+    left:-5%;
+    transform: rotate(51deg) scale(1.5);
+}
 /******** section blog post  *******/
 .blog-post-section {
     position: relative;
@@ -803,6 +941,7 @@ header .container {
 a.copy-right-link {
     color: #d3d3fb;
 }
+
 @media screen and (max-width:450px) {
     .footer-content {
         margin-top: 26em;
@@ -904,6 +1043,36 @@ a.copy-right-link {
 
     .btn-next-s {
         left: 0;
+    }
+    .btn-right-aw {
+        right: 0;
+    }
+
+    .btn-left-aw {
+        left: 0;
+    }
+    .img-h-100{
+        height: 100%;
+    }
+
+    .box-count-up-border::before,
+    .box-count-up-border::after {
+        content: "";
+        position: absolute;
+        width: 50%;
+        height: 2px;
+        margin: 0 auto;
+        right: 0;
+        left: 0;
+        background-color: #c5c5c5;
+    }
+
+    .box-count-up-border::before {
+        top: 0;
+    }
+
+    .box-count-up-border::after {
+        bottom: -15px;
     }
 }
 /* Large devices (tablet, 769px and up) */
